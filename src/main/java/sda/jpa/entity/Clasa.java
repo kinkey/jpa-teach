@@ -31,7 +31,7 @@ public class Clasa {
     )
     Integer idClasa;
 
-    String numeClasa;
+    public String numeClasa;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "clasa")
     List<Elevi> eleviList;
