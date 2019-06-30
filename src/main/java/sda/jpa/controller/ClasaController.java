@@ -40,7 +40,8 @@ public class ClasaController {
     @ResponseBody
     public List<ClasaDTO> getAllClase() {
         List<ClasaDTO> allClase = clasaService.getAllClase();
-
+        System.out.println("Printing whatever");
         return allClase;
     }
+
 }
