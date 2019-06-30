@@ -29,10 +29,10 @@ public class ClasaController {
     @GetMapping("/clase")
     public String homePage(Model model) {
         List<ClasaDTO> allClase = clasaService.getAllClase();
-        System.out.println("Some other message");
+
         model.addAttribute("clase", allClase);
 
-        return "home2";
+        return "clase";
 
     }
 
@@ -40,7 +40,7 @@ public class ClasaController {
     @ResponseBody
     public List<ClasaDTO> getAllClase() {
         List<ClasaDTO> allClase = clasaService.getAllClase();
-        System.out.println("Printing whatever");
+
         return allClase;
     }
 

@@ -4,7 +4,7 @@
 <h1>Hello !</h1>
 
 <ol th:each="clasa : ${clase}">
-    <li th:text="${clasa.numeClasa}" href="http://localhost/elevi/${clasa.idClasa}"></li>
+    <a th:text="${clasa.numeClasa}" th:href="@{|~/elevi/${clasa.numeClasa}|}"></a>
 </ol>
 </body>
 </html>

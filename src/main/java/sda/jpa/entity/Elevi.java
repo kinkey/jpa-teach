@@ -63,4 +63,8 @@ public class Elevi {
     public Integer getIdElev() {
         return idElev;
     }
+
+    public String getNumeElev() {
+        return numeElev;
+    }
 }
