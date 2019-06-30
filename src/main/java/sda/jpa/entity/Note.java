@@ -54,4 +54,12 @@ public class Note {
                 ",\n  elev=" + elevi.numeElev +
                 '}';
     }
+
+    public Integer getValoareNota() {
+        return valoareNota;
+    }
+
+    public String getProfesorName() {
+        return profesori.numeProfesor;
+    }
 }
