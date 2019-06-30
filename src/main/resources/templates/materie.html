@@ -1,0 +1,11 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head><title>Home Page</title></head>
+<body>
+<h1>Elevi</h1>
+
+<ol th:each="materie : ${materii}">
+    <a th:text="${materie.numeMaterie}"
+       th:href="@{|~/note/${elevId}/${materie.displayNumeMaterie}|}"></a>
+</ol>
+</body>
+</html>

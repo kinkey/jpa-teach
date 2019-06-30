@@ -63,4 +63,8 @@ public class Materie {
     public Integer getIdMaterie() {
         return idMaterie;
     }
+
+    public String getNumeMaterie() {
+        return numeMaterie;
+    }
 }
