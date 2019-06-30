@@ -29,7 +29,7 @@ public class ClasaController {
     @GetMapping("/clase")
     public String homePage(Model model) {
         List<ClasaDTO> allClase = clasaService.getAllClase();
-
+        System.out.println("Some other message");
         model.addAttribute("clase", allClase);
 
         return "home2";
